@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "controleform/controle-form",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - controleform/controle-form",
+			"detail": "ng build"
+		}
+	]
+}

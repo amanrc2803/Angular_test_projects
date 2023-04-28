@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+
+  
+  
+  
+
+  <form>
+    <p>startDate: <input type="date"
+      size="65" id="startDate" /></p>
+<p>endDate: <input type="date"
+        size="65" id="endDate" /></p>
+
+        <input type="checkbox" onchange="getChecked()" id='check1'>
+
+
+   <button id="myBtn">Submit</button>
+  </form>
+  <script>
+    var startDate = moment.parse("startDate", "DD/MM/YYYY");
+var endDate = moment.parse("endDate", "DD/MM/YYYY");
+
+if (endDate.isAfter(startDate)) {
+   alert("sorry! please enter valid date");
+}
+    document.getElementById("myBtn").addEventListener("click", function() {
+      
+  alert("Submitted");});
+
+  function getChecked() {
+  const checkBox = document.getElementById('check1').checked;
+  if (checkBox === true) {
+    console.log(true);
+    } else {
+      console.log(false);
+  }
+}
+  
+  </script>
+  
+</body>
+</html>

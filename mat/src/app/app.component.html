@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<form>
+<a onclick="myFunction()">Line #1()
+
+</a>
+<input type="reset"  style="float: right;" value="Clear">
+<div id="myDIV">
+  <div>
+    <label for="Start Date">Start Date</label>
+    <input type="date" />
+  </div>
+  <div>
+    <label for="End Date">End Date</label>
+    <input type="date" />
+  </div>
+  <div>
+    <label for="Department">Department</label>
+    <input type="text" />
+  </div>
+  <div>
+    <label for="Acct Code">Acct Code</label>
+    <input type="text" />
+  </div>
+  <div>
+    <label for="Explanation">Explanation</label>
+    <input type="text" />
+  </div>
+  </div>
+  </form>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+
